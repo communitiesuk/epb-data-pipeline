@@ -1,7 +1,7 @@
 [project]
 name = "epb-data-pipeline"
 version = "0.1.0"
-description = "Add your description here"
+description = "EPB cloud ETL repository"
 readme = "README.md"
 authors = [
     { name = "christinehorrocks", email = "christine.horrocks@communities.gov.uk" }
@@ -12,9 +12,6 @@ dependencies = [
     "pyspark~=3.5.0",
 ]
 
-[project.scripts]
-epb-data-pipeline = "epb_data_pipeline:main"
-
 [build-system]
 requires = ["uv_build>=0.13.5,<0.14.0"]
 build-backend = "uv_build"
@@ -22,4 +19,5 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
+    "ruff>=0.17.2",
 ]
