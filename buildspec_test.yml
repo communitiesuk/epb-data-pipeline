@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pip install uv
+      - uv sync
+
+  build:
+    commands:
+      - uv run pytest
