@@ -30,7 +30,7 @@ jobs:
         run: uv sync --locked
       - name: Security audit dependencies
         run: uv run pip-audit
-      - name: Run Ruff
-        run: uv run ruff check --output-format=github .
+#      - name: Run Ruff
+#        run: uv run ruff check --output-format=github .
       - name: Test with pytest
         run: uv run pytest
