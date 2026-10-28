@@ -3,10 +3,7 @@ name = "epb-data-pipeline"
 version = "0.1.0"
 description = "EPB cloud ETL repository"
 readme = "README.md"
-authors = [
-    { name = "christinehorrocks", email = "christine.horrocks@communities.gov.uk" }
-]
-requires-python = ">=3.11"
+requires-python = "3.11"
 dependencies = [
     "boto3>=1.43.117",
     "pyspark~=3.5.0",
