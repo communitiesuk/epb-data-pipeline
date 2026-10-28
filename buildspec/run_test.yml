@@ -5,9 +5,12 @@ phases:
     runtime-versions:
       python: 3.11
     commands:
+      - echo "Installing uv..."
       - pip install uv
+      - echo "Installing project dependencies..."
       - uv sync
 
   build:
     commands:
+      - echo "Running tests..."
       - uv run pytest tests/
