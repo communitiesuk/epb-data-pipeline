@@ -9,5 +9,5 @@ phases:
     commands:
       - echo Build started on `date`
       - echo "Deploying ETL scripts to S3 data lake..."
-      - bash ./scripts/assume_role.sh arn:aws:iam::$AWS_ACCOUNT_ID:role/ci-server thisProfile
+#      - bash ./scripts/assume_role.sh arn:aws:iam::$AWS_ACCOUNT_ID:role/ci-server thisProfile
       - aws s3 sync ./src/jobs/ s3://${S3_BUCKET_NAME}/${TARGET_PREFIX}/ --exclude "*" --include "*.py" --profile thisProfile
